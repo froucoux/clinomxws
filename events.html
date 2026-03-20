@@ -1,378 +1,472 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Clinom-X — Project events, conferences, publications, and milestones.">
   <title>Clinom-X | Events</title>
   <link rel="icon" href="favicon.ico">
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-<a class="skip-link" href="#main">Skip to content</a>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-<!-- ===== HEADER ===== -->
-<header class="site-header">
-  <div class="header-inner">
-    <a href="index.html" class="logo" aria-label="Clinom-X home">
-      <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true">
-        <polygon points="20,2 36.5,11 36.5,29 20,38 3.5,29 3.5,11" fill="none" stroke="#3b82f6" stroke-width="2"/>
-        <polygon points="20,8 31,14 31,26 20,32 9,26 9,14" fill="none" stroke="#3b82f6" stroke-width="1" opacity="0.5"/>
-        <circle cx="20" cy="20" r="3" fill="#3b82f6"/>
-      </svg>
-      <span class="logo-text">CLINOM-X</span>
-    </a>
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="Clinom-X home">
+        <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true">
+          <polygon points="20,2 36.5,11 36.5,29 20,38 3.5,29 3.5,11" fill="none" stroke="#3b82f6" stroke-width="2" />
+          <polygon points="20,8 31,14 31,26 20,32 9,26 9,14" fill="none" stroke="#3b82f6" stroke-width="1"
+            opacity="0.5" />
+          <circle cx="20" cy="20" r="3" fill="#3b82f6" />
+        </svg>
+        <span class="logo-text">CLINOM-X</span>
+      </a>
 
-    <input type="checkbox" id="nav-toggle" class="nav-toggle sr-only" aria-label="Toggle navigation">
-    <label for="nav-toggle" class="nav-toggle-label" aria-label="Open menu"><span></span></label>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle sr-only" aria-label="Toggle navigation">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Open menu"><span></span></label>
 
-    <div class="nav-menu">
-      <nav class="nav-links" aria-label="Primary navigation">
+      <div class="nav-menu">
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a href="events.html" class="active">Events</a>
+          <a href="people.html">People</a>
+          <a href="links.html">Links</a>
+        </nav>
+        <a href="mailto:francois.roucoux@uclouvain.be" class="btn-contact btn-contact-nav">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <a href="mailto:francois.roucoux@uclouvain.be" class="btn-contact btn-contact-fixed">Contact</a>
+
+  <main id="main" class="page-content">
+
+    <!-- ===== PAGE HERO ===== -->
+    <section class="page-hero">
+      <div class="hero-bg" aria-hidden="true">
+        <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <pattern id="dot-grid" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+              <circle cx="12" cy="12" r="1" fill="rgba(37,99,235,0.07)" />
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#dot-grid)" />
+        </svg>
+      </div>
+      <div class="container">
+        <p class="eyebrow">Timeline</p>
+        <h1>Events</h1>
+        <p class="subtitle">Conferences, publications, and project milestones from the Clinom-X consortium.</p>
+      </div>
+    </section>
+
+    <!-- ===== FILTER BAR ===== -->
+    <section class="section" style="padding-top: 2rem;">
+      <div class="container">
+        <nav class="filter-bar" aria-label="Event type filter">
+          <a href="#" class="active">All</a>
+          <a href="#">Conferences</a>
+          <a href="#">Workshops</a>
+          <a href="#">Publications</a>
+          <a href="#">Milestones</a>
+        </nav>
+
+        <!-- ===== EVENTS TIMELINE ===== -->
+        <ul class="timeline">
+
+          <li class="timeline-entry">
+            <span class="timeline-year">2026</span>
+            <span class="timeline-rule" aria-hidden="true"></span>
+            <div class="timeline-content">
+              <p class="timeline-date">Jan 2026</p>
+              <span class="tag">Publication</span>
+              <p class="timeline-title">MIE 2026 &mdash; Clinical Diagnosis of Rare Diseases using Leaky Noisy-OR
+                Bayesian Networks</p>
+              <p class="timeline-venue">Medical Informatics Europe (MIE) 2026</p>
+              <p class="timeline-desc">Paper by F. Roucoux and S. Jodogne (UCLouvain / ICTEAM) submitted to MIE 2026.
+                Presents a probabilistic method for rare disease diagnosis using leaky noisy-OR Bayesian networks
+                automatically constructed from Orphanet and HPO data. The model contains over 8,000 diseases and 9,000
+                phenotype variables, and achieves 56.2% Top-3 diagnostic accuracy on 384 real clinical cases,
+                competitive with state-of-the-art tools. Released as free and open-source software.</p>
+              <a href="https://forge.uclouvain.be/FrancoisRoucoux/rddnoisyornetwork" class="timeline-link"
+                target="_blank" rel="noopener noreferrer">&rarr; Source code</a>
+            </div>
+          </li>
+
+          <li class="timeline-entry">
+            <span class="timeline-year">2025</span>
+            <span class="timeline-rule" aria-hidden="true"></span>
+            <div class="timeline-content">
+              <p class="timeline-date">Nov 2025</p>
+              <span class="tag">Milestone</span>
+              <p class="timeline-title">EEG Data Integration Strategy Defined</p>
+              <p class="timeline-venue">UCLouvain &mdash; ICTEAM</p>
+              <p class="timeline-desc">Following participation in the COST CA24161 Management Committee, a strategy for
+                EEG data integration into Clinom-X was defined, adopting DICOM WG-32 and BIDS standards, aligning
+                metadata with COST recommendations, and leveraging the Orthanc ecosystem for EEG data addressing from
+                OpenMRS.</p>
+            </div>
+          </li>
+
+          <li class="timeline-entry">
+            <span class="timeline-year">2025</span>
+            <span class="timeline-rule" aria-hidden="true"></span>
+            <div class="timeline-content">
+              <p class="timeline-date">20 Nov 2025</p>
+              <span class="tag">Conference</span>
+              <p class="timeline-title">BNAIC/BeNeLearn 2025 &mdash; Speaker</p>
+              <p class="timeline-venue">BNAIC/BeNeLearn 2025</p>
+              <p class="timeline-desc">Presentation: &ldquo;Old Methods, New Data &mdash; How 1980s AI Meets Modern
+                Medical Databases to Reach and Outperform the State of the Art in Clinical Diagnosis of Rare
+                Diseases.&rdquo; Covering results obtained during the development of the analysis pipeline.</p>
+            </div>
+          </li>
+
+          <li class="timeline-entry">
+            <span class="timeline-year">2025</span>
+            <span class="timeline-rule" aria-hidden="true"></span>
+            <div class="timeline-content">
+              <p class="timeline-date">Oct 2025</p>
+              <span class="tag">Milestone</span>
+              <p class="timeline-title">Rare Disease Diagnostic Pipeline &mdash; Submitted to MIE 2026</p>
+              <p class="timeline-venue">UCLouvain &mdash; ICTEAM</p>
+              <p class="timeline-desc">A rare disease diagnostic pipeline was developed, leveraging HPO/Orphanet
+                annotations within a Noisy-OR probabilistic model. Evaluated on 300+ clinical cases, it achieves a Top-3
+                accuracy of 56.2%, competitive with current state-of-the-art tools. The work has been submitted to MIE
+                2026.</p>
+            </div>
+          </li>
+
+          <li class="timeline-entry">
+            <span class="timeline-year">2025</span>
+            <span class="timeline-rule" aria-hidden="true"></span>
+            <div class="timeline-content">
+              <p class="timeline-date">11 Oct 2025</p>
+              <span class="tag">Conference</span>
+              <p class="timeline-title">Academic Session &mdash; AI &amp; Data Science in Primary Care</p>
+              <p class="timeline-venue">Belgium</p>
+              <p class="timeline-desc">Speaker at an academic session and morning reflection on the use of AI and data
+                science in primary care.</p>
+            </div>
+          </li>
+
+          <li class="timeline-entry">
+            <span class="timeline-year">2025</span>
+            <span class="timeline-rule" aria-hidden="true"></span>
+            <div class="timeline-content">
+              <p class="timeline-date">06 Oct 2025</p>
+              <span class="tag">Milestone</span>
+              <p class="timeline-title">COST Action CA24161 &mdash; First Management Committee</p>
+              <p class="timeline-venue">COST Association</p>
+              <p class="timeline-desc">Participation of the Clinom-X project promoter in the first Management Committee
+                of COST Action CA24161, in connection with the integration of neurophysiological data (EEG) into the
+                Clinom-X platform.</p>
+              <a href="https://www.cost.eu/actions/CA24161/" class="timeline-link" target="_blank"
+                rel="noopener noreferrer">&rarr; COST Action CA24161</a>
+            </div>
+          </li>
+
+          <li class="timeline-entry">
+            <span class="timeline-year">2025</span>
+            <span class="timeline-rule" aria-hidden="true"></span>
+            <div class="timeline-content">
+              <p class="timeline-date">23 Sep 2025</p>
+              <span class="tag">Conference</span>
+              <p class="timeline-title">GHdC Conference &mdash; AI in Healthcare &amp; Resource Frugality</p>
+              <p class="timeline-venue">Grand H&ocirc;pital de Charleroi</p>
+              <p class="timeline-desc">Speaker at a conference, roundtable, and evening of reflections on AI use in
+                healthcare, with a particular focus on resource frugality.</p>
+            </div>
+          </li>
+
+          <li class="timeline-entry">
+            <span class="timeline-year">2025</span>
+            <span class="timeline-rule" aria-hidden="true"></span>
+            <div class="timeline-content">
+              <p class="timeline-date">25 Jun 2025</p>
+              <span class="tag">Conference</span>
+              <p class="timeline-title">FHIR SDC Conference</p>
+              <p class="timeline-venue">Online</p>
+              <p class="timeline-desc">Participation in the FHIR SDC conference on the use of the FHIR standard for
+                Electronic Data Capture (EDC) systems such as Clinom-X.</p>
+            </div>
+          </li>
+
+          <li class="timeline-entry">
+            <span class="timeline-year">2025</span>
+            <span class="timeline-rule" aria-hidden="true"></span>
+            <div class="timeline-content">
+              <p class="timeline-date">Jul 2025</p>
+              <span class="tag">Milestone</span>
+              <p class="timeline-title">OpenMRS Confirmed as Technological Foundation</p>
+              <p class="timeline-venue">UCLouvain &mdash; ICTEAM</p>
+              <p class="timeline-desc">OpenMRS was confirmed as the technological foundation for electronic data
+                collection, offering concept-oriented modelling, configurable forms, and REST/FHIR interfaces. A Java
+                REST client is under development, already supporting full management of core resources (Patients,
+                Visits, Encounters, Observations, Concepts). FHIR integration strategy defined: QuestionnaireResponses
+                stored as JSON within OpenMRS Observations, and Questionnaires as Concepts, with UUID-based alignment.
+              </p>
+            </div>
+          </li>
+
+          <li class="timeline-entry">
+            <span class="timeline-year">2025</span>
+            <span class="timeline-rule" aria-hidden="true"></span>
+            <div class="timeline-content">
+              <p class="timeline-date">02 Jun 2025</p>
+              <span class="tag">Workshop</span>
+              <p class="timeline-title">Ethics Committee Working Group &mdash; French Delegation on Digital Health</p>
+              <p class="timeline-venue">France</p>
+              <p class="timeline-desc">Speaker at the workshop of the ethics committee working group of the French
+                delegation on digital health.</p>
+            </div>
+          </li>
+
+          <li class="timeline-entry">
+            <span class="timeline-year">2025</span>
+            <span class="timeline-rule" aria-hidden="true"></span>
+            <div class="timeline-content">
+              <p class="timeline-date">22 May 2025</p>
+              <span class="tag">Conference</span>
+              <p class="timeline-title">ICTEAM Day &mdash; Poster &amp; Presentation</p>
+              <p class="timeline-venue">Louvain-la-Neuve</p>
+              <p class="timeline-desc">Speaker at the ICTEAM Day conference with a poster presentation on the use of
+                ontologies and knowledge graphs in rare disease diagnostic decision support.</p>
+            </div>
+          </li>
+
+          <li class="timeline-entry">
+            <span class="timeline-year">2025</span>
+            <span class="timeline-rule" aria-hidden="true"></span>
+            <div class="timeline-content">
+              <p class="timeline-date">12 May 2025</p>
+              <span class="tag">Conference</span>
+              <p class="timeline-title">MedReSyst Seminar &mdash; Ethics of Health Data Use for AI</p>
+              <p class="timeline-venue">MedReSyst</p>
+              <p class="timeline-desc">Speaker at the MedReSyst seminar on the ethics of health data use for artificial
+                intelligence.</p>
+            </div>
+          </li>
+
+          <li class="timeline-entry">
+            <span class="timeline-year">2025</span>
+            <span class="timeline-rule" aria-hidden="true"></span>
+            <div class="timeline-content">
+              <p class="timeline-date">06 May 2025</p>
+              <span class="tag">Workshop</span>
+              <p class="timeline-title">Ethics Committee Working Group &mdash; French Delegation on Digital Health</p>
+              <p class="timeline-venue">France</p>
+              <p class="timeline-desc">Speaker at the workshop of the ethics committee working group of the French
+                delegation on digital health.</p>
+            </div>
+          </li>
+
+          <li class="timeline-entry">
+            <span class="timeline-year">2025</span>
+            <span class="timeline-rule" aria-hidden="true"></span>
+            <div class="timeline-content">
+              <p class="timeline-date">Apr 2025</p>
+              <span class="tag">Milestone</span>
+              <p class="timeline-title">Extended Analysis &mdash; Ontologies, Phenotype-Gene Linkage &amp; Test Dataset
+              </p>
+              <p class="timeline-venue">UCLouvain &mdash; ICTEAM</p>
+              <p class="timeline-desc">Continued analysis with three additional requirements identified: integration of
+                standardised ontologies and vocabularies; phenotype-to-gene and gene-to-phenotype linkage (the database
+                now holds over 640,000 such links); and construction of a shareable test dataset of 300+ realistic rare
+                disease clinical cases with formalised clinical and genetic data, supported by HPO annotations linked to
+                OMIM, Orphanet, and Decipher.</p>
+            </div>
+          </li>
+
+          <li class="timeline-entry">
+            <span class="timeline-year">2025</span>
+            <span class="timeline-rule" aria-hidden="true"></span>
+            <div class="timeline-content">
+              <p class="timeline-date">14 Apr 2025</p>
+              <span class="tag">Workshop</span>
+              <p class="timeline-title">F&eacute;d&eacute;ration Francophone des Maisons M&eacute;dicales &mdash; AI in
+                Healthcare</p>
+              <p class="timeline-venue">Belgium</p>
+              <p class="timeline-desc">Speaker at a workshop organized by the F&eacute;d&eacute;ration Francophone des
+                Maisons M&eacute;dicales on the use of AI in healthcare.</p>
+            </div>
+          </li>
+
+          <li class="timeline-entry">
+            <span class="timeline-year">2025</span>
+            <span class="timeline-rule" aria-hidden="true"></span>
+            <div class="timeline-content">
+              <p class="timeline-date">05 Apr 2025</p>
+              <span class="tag">Conference</span>
+              <p class="timeline-title">PPLW Exchange Day &mdash; Multidisciplinary 2.0 Care &amp; Digital Health
+                Literacy</p>
+              <p class="timeline-venue">Belgium</p>
+              <p class="timeline-desc">Participation in the PPLW Exchange Day on multidisciplinary 2.0 care and digital
+                health literacy.</p>
+            </div>
+          </li>
+
+          <li class="timeline-entry">
+            <span class="timeline-year">2025</span>
+            <span class="timeline-rule" aria-hidden="true"></span>
+            <div class="timeline-content">
+              <p class="timeline-date">17 Mar 2025</p>
+              <span class="tag">Workshop</span>
+              <p class="timeline-title">Ethics Committee Working Group &mdash; French Delegation on Digital Health</p>
+              <p class="timeline-venue">France</p>
+              <p class="timeline-desc">Speaker at the workshop of the ethics committee working group of the French
+                delegation on digital health.</p>
+            </div>
+          </li>
+
+          <li class="timeline-entry">
+            <span class="timeline-year">2025</span>
+            <span class="timeline-rule" aria-hidden="true"></span>
+            <div class="timeline-content">
+              <p class="timeline-date">28 Feb 2025</p>
+              <span class="tag">Conference</span>
+              <p class="timeline-title">UCLouvain Honorary Doctorates &mdash; Health &amp; Data Science</p>
+              <p class="timeline-venue">UCLouvain, Faculty of Science and Technology</p>
+              <p class="timeline-desc">Participation in the Honorary Doctorates ceremony on the theme of &ldquo;Health
+                and Data Science&rdquo;, including a workshop on secondary use and ownership of health data.</p>
+            </div>
+          </li>
+
+          <li class="timeline-entry">
+            <span class="timeline-year">2025</span>
+            <span class="timeline-rule" aria-hidden="true"></span>
+            <div class="timeline-content">
+              <p class="timeline-date">20 Feb 2025</p>
+              <span class="tag">Workshop</span>
+              <p class="timeline-title">Rare Disease Research &amp; Screening Workshop</p>
+              <p class="timeline-venue">Cliniques Universitaires Saint-Luc, Brussels</p>
+              <p class="timeline-desc">Participation in a workshop on research and screening organized by the rare
+                disease care team at the Cliniques Universitaires Saint-Luc.</p>
+            </div>
+          </li>
+
+          <li class="timeline-entry">
+            <span class="timeline-year">2025</span>
+            <span class="timeline-rule" aria-hidden="true"></span>
+            <div class="timeline-content">
+              <p class="timeline-date">13 Feb 2025</p>
+              <span class="tag">Conference</span>
+              <p class="timeline-title">Soins &amp; Sant&eacute; Fair &mdash; AI in Healthcare</p>
+              <p class="timeline-venue">Namur, Belgium</p>
+              <p class="timeline-desc">Speaker at the Namur health fair Soins &amp; Sant&eacute;, on the topic of AI use
+                in healthcare.</p>
+            </div>
+          </li>
+
+          <li class="timeline-entry">
+            <span class="timeline-year">2025</span>
+            <span class="timeline-rule" aria-hidden="true"></span>
+            <div class="timeline-content">
+              <p class="timeline-date">Jan 2025</p>
+              <span class="tag">Milestone</span>
+              <p class="timeline-title">Platform Analysis Phase &mdash; Core Requirements Identified</p>
+              <p class="timeline-venue">UCLouvain &mdash; ICTEAM</p>
+              <p class="timeline-desc">Analysis phase for an open, standards-based platform for managing clinical,
+                medico-technical, and omic data in clinical research. Core requirements identified: user and role
+                management, research project tracking, data collection instruments (using a two-level archetype/template
+                model), dataset management with open metadata, authorised access and visualisation, import/export in
+                CSV, Avro, Parquet, FHIR JSON, and OMOP formats, and a REST API for external integration.</p>
+            </div>
+          </li>
+
+          <li class="timeline-entry">
+            <span class="timeline-year">2025</span>
+            <span class="timeline-rule" aria-hidden="true"></span>
+            <div class="timeline-content">
+              <p class="timeline-date">30 Jan 2025</p>
+              <span class="tag">Workshop</span>
+              <p class="timeline-title">Rare Diseases Reflection Session (2/2)</p>
+              <p class="timeline-venue">Belgium</p>
+              <p class="timeline-desc">Second morning reflection session dedicated to rare diseases: diagnosis,
+                treatment, clinical studies, and related challenges.</p>
+            </div>
+          </li>
+
+          <li class="timeline-entry">
+            <span class="timeline-year">2024</span>
+            <span class="timeline-rule" aria-hidden="true"></span>
+            <div class="timeline-content">
+              <p class="timeline-date">09 Dec 2024</p>
+              <span class="tag">Workshop</span>
+              <p class="timeline-title">Rare Diseases Reflection Session (1/2)</p>
+              <p class="timeline-venue">Belgium</p>
+              <p class="timeline-desc">First morning reflection session dedicated to rare diseases: diagnosis,
+                treatment, clinical studies, and related challenges.</p>
+            </div>
+          </li>
+
+          <li class="timeline-entry">
+            <span class="timeline-year">2024</span>
+            <span class="timeline-rule" aria-hidden="true"></span>
+            <div class="timeline-content">
+              <p class="timeline-date">09 Sep 2024</p>
+              <span class="tag">Conference</span>
+              <p class="timeline-title">Grascomp Doctoral Day</p>
+              <p class="timeline-venue">Louvain-la-Neuve</p>
+              <p class="timeline-desc">Participation in the Grascomp Doctoral Day.</p>
+            </div>
+          </li>
+
+          <li class="timeline-entry">
+            <span class="timeline-year">2024</span>
+            <span class="timeline-rule" aria-hidden="true"></span>
+            <div class="timeline-content">
+              <p class="timeline-date">01 Mar 2024</p>
+              <span class="tag">Milestone</span>
+              <p class="timeline-title">INAH Working Group &mdash; Institute of Analytics for Health</p>
+              <p class="timeline-venue">Wallonia, Belgium</p>
+              <p class="timeline-desc">Participation in the working group for the creation of the Walloon non-profit
+                organization INAH (Institute of Analytics for Health).</p>
+            </div>
+          </li>
+
+          <li class="timeline-entry">
+            <span class="timeline-year">2024</span>
+            <span class="timeline-rule" aria-hidden="true"></span>
+            <div class="timeline-content">
+              <p class="timeline-date">05 Feb 2024</p>
+              <span class="tag">Conference</span>
+              <p class="timeline-title">Research to Reality: Digital Solutions to European Challenges</p>
+              <p class="timeline-venue">European Commission (HaDEA)</p>
+              <p class="timeline-desc">Speaker at the European event &ldquo;Research to Reality: Digital Solutions to
+                European Challenges&rdquo;.</p>
+              <a href="https://hadea.ec.europa.eu/events/research-reality-digital-solutions-european-challenges-2024-02-05_en"
+                class="timeline-link" target="_blank" rel="noopener noreferrer">&rarr; Event page</a>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-copy">&copy; 2025 Clinom-X Research Consortium</p>
+      <nav class="footer-nav" aria-label="Footer navigation">
         <a href="index.html">Home</a>
-        <a href="events.html" class="active">Events</a>
+        <a href="events.html">Events</a>
         <a href="people.html">People</a>
         <a href="links.html">Links</a>
       </nav>
-      <a href="mailto:francois.roucoux@uclouvain.be" class="btn-contact btn-contact-nav">Contact</a>
     </div>
-  </div>
-</header>
-
-<a href="mailto:francois.roucoux@uclouvain.be" class="btn-contact btn-contact-fixed">Contact</a>
-
-<main id="main" class="page-content">
-
-<!-- ===== PAGE HERO ===== -->
-<section class="page-hero">
-  <div class="hero-bg" aria-hidden="true">
-    <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <pattern id="dot-grid" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="12" cy="12" r="1" fill="rgba(37,99,235,0.07)"/>
-        </pattern>
-      </defs>
-      <rect width="100%" height="100%" fill="url(#dot-grid)"/>
-    </svg>
-  </div>
-  <div class="container">
-    <p class="eyebrow">Timeline</p>
-    <h1>Events</h1>
-    <p class="subtitle">Conferences, publications, and project milestones from the Clinom-X consortium.</p>
-  </div>
-</section>
-
-<!-- ===== FILTER BAR ===== -->
-<section class="section" style="padding-top: 2rem;">
-  <div class="container">
-    <nav class="filter-bar" aria-label="Event type filter">
-      <a href="#" class="active">All</a>
-      <a href="#">Conferences</a>
-      <a href="#">Workshops</a>
-      <a href="#">Publications</a>
-      <a href="#">Milestones</a>
-    </nav>
-
-    <!-- ===== EVENTS TIMELINE ===== -->
-    <ul class="timeline">
-
-      <li class="timeline-entry">
-        <span class="timeline-year">2025</span>
-        <span class="timeline-rule" aria-hidden="true"></span>
-        <div class="timeline-content">
-          <p class="timeline-date">20 Nov 2025</p>
-          <span class="tag">Conference</span>
-          <p class="timeline-title">BNAIC/BeNeLearn 2025 &mdash; Speaker</p>
-          <p class="timeline-venue">BNAIC/BeNeLearn 2025</p>
-          <p class="timeline-desc">Presentation: &ldquo;Old Methods, New Data &mdash; How 1980s AI Meets Modern Medical Databases to Reach and Outperform the State of the Art in Clinical Diagnosis of Rare Diseases.&rdquo; Covering results obtained during the development of the analysis pipeline.</p>
-        </div>
-      </li>
-
-      <li class="timeline-entry">
-        <span class="timeline-year">2025</span>
-        <span class="timeline-rule" aria-hidden="true"></span>
-        <div class="timeline-content">
-          <p class="timeline-date">11 Oct 2025</p>
-          <span class="tag">Conference</span>
-          <p class="timeline-title">Academic Session &mdash; AI &amp; Data Science in Primary Care</p>
-          <p class="timeline-venue">Belgium</p>
-          <p class="timeline-desc">Speaker at an academic session and morning reflection on the use of AI and data science in primary care.</p>
-        </div>
-      </li>
-
-      <li class="timeline-entry">
-        <span class="timeline-year">2025</span>
-        <span class="timeline-rule" aria-hidden="true"></span>
-        <div class="timeline-content">
-          <p class="timeline-date">06 Oct 2025</p>
-          <span class="tag">Milestone</span>
-          <p class="timeline-title">COST Action CA24161 &mdash; First Management Committee</p>
-          <p class="timeline-venue">COST Association</p>
-          <p class="timeline-desc">Participation of the Clinom-X project promoter in the first Management Committee of COST Action CA24161, in connection with the integration of neurophysiological data (EEG) into the Clinom-X platform.</p>
-          <a href="https://www.cost.eu/actions/CA24161/" class="timeline-link" target="_blank" rel="noopener noreferrer">&rarr; COST Action CA24161</a>
-        </div>
-      </li>
-
-      <li class="timeline-entry">
-        <span class="timeline-year">2025</span>
-        <span class="timeline-rule" aria-hidden="true"></span>
-        <div class="timeline-content">
-          <p class="timeline-date">23 Sep 2025</p>
-          <span class="tag">Conference</span>
-          <p class="timeline-title">GHdC Conference &mdash; AI in Healthcare &amp; Resource Frugality</p>
-          <p class="timeline-venue">Grand H&ocirc;pital de Charleroi</p>
-          <p class="timeline-desc">Speaker at a conference, roundtable, and evening of reflections on AI use in healthcare, with a particular focus on resource frugality.</p>
-        </div>
-      </li>
-
-      <li class="timeline-entry">
-        <span class="timeline-year">2025</span>
-        <span class="timeline-rule" aria-hidden="true"></span>
-        <div class="timeline-content">
-          <p class="timeline-date">25 Jun 2025</p>
-          <span class="tag">Conference</span>
-          <p class="timeline-title">FHIR SDC Conference</p>
-          <p class="timeline-venue">Online</p>
-          <p class="timeline-desc">Participation in the FHIR SDC conference on the use of the FHIR standard for Electronic Data Capture (EDC) systems such as Clinom-X.</p>
-        </div>
-      </li>
-
-      <li class="timeline-entry">
-        <span class="timeline-year">2025</span>
-        <span class="timeline-rule" aria-hidden="true"></span>
-        <div class="timeline-content">
-          <p class="timeline-date">03 Jun 2025</p>
-          <span class="tag">Milestone</span>
-          <p class="timeline-title">CST General Assembly</p>
-          <p class="timeline-venue">Belgium</p>
-          <p class="timeline-desc">Participation in the general assembly of the CST (Belgian consortium for the use of SNOMED-CT).</p>
-        </div>
-      </li>
-
-      <li class="timeline-entry">
-        <span class="timeline-year">2025</span>
-        <span class="timeline-rule" aria-hidden="true"></span>
-        <div class="timeline-content">
-          <p class="timeline-date">02 Jun 2025</p>
-          <span class="tag">Workshop</span>
-          <p class="timeline-title">Ethics Committee Working Group &mdash; French Delegation on Digital Health</p>
-          <p class="timeline-venue">France</p>
-          <p class="timeline-desc">Speaker at the workshop of the ethics committee working group of the French delegation on digital health.</p>
-        </div>
-      </li>
-
-      <li class="timeline-entry">
-        <span class="timeline-year">2025</span>
-        <span class="timeline-rule" aria-hidden="true"></span>
-        <div class="timeline-content">
-          <p class="timeline-date">28 May 2025</p>
-          <span class="tag">Workshop</span>
-          <p class="timeline-title">BNAIC/BeNeLearn Meeting at UNamur</p>
-          <p class="timeline-venue">Universit&eacute; de Namur</p>
-          <p class="timeline-desc">Meeting with members of the BNAIC/BeNeLearn department at UNamur on the secondary use of health data for machine learning purposes.</p>
-        </div>
-      </li>
-
-      <li class="timeline-entry">
-        <span class="timeline-year">2025</span>
-        <span class="timeline-rule" aria-hidden="true"></span>
-        <div class="timeline-content">
-          <p class="timeline-date">22 May 2025</p>
-          <span class="tag">Conference</span>
-          <p class="timeline-title">ICTEAM Day &mdash; Poster &amp; Presentation</p>
-          <p class="timeline-venue">Louvain-la-Neuve</p>
-          <p class="timeline-desc">Speaker at the ICTEAM Day conference with a poster presentation on the use of ontologies and knowledge graphs in rare disease diagnostic decision support.</p>
-        </div>
-      </li>
-
-      <li class="timeline-entry">
-        <span class="timeline-year">2025</span>
-        <span class="timeline-rule" aria-hidden="true"></span>
-        <div class="timeline-content">
-          <p class="timeline-date">12 May 2025</p>
-          <span class="tag">Conference</span>
-          <p class="timeline-title">MedReSyst Seminar &mdash; Ethics of Health Data Use for AI</p>
-          <p class="timeline-venue">MedReSyst</p>
-          <p class="timeline-desc">Speaker at the MedReSyst seminar on the ethics of health data use for artificial intelligence.</p>
-        </div>
-      </li>
-
-      <li class="timeline-entry">
-        <span class="timeline-year">2025</span>
-        <span class="timeline-rule" aria-hidden="true"></span>
-        <div class="timeline-content">
-          <p class="timeline-date">06 May 2025</p>
-          <span class="tag">Workshop</span>
-          <p class="timeline-title">Ethics Committee Working Group &mdash; French Delegation on Digital Health</p>
-          <p class="timeline-venue">France</p>
-          <p class="timeline-desc">Speaker at the workshop of the ethics committee working group of the French delegation on digital health.</p>
-        </div>
-      </li>
-
-      <li class="timeline-entry">
-        <span class="timeline-year">2025</span>
-        <span class="timeline-rule" aria-hidden="true"></span>
-        <div class="timeline-content">
-          <p class="timeline-date">14 Apr 2025</p>
-          <span class="tag">Workshop</span>
-          <p class="timeline-title">F&eacute;d&eacute;ration Francophone des Maisons M&eacute;dicales &mdash; AI in Healthcare</p>
-          <p class="timeline-venue">Belgium</p>
-          <p class="timeline-desc">Speaker at a workshop organized by the F&eacute;d&eacute;ration Francophone des Maisons M&eacute;dicales on the use of AI in healthcare.</p>
-        </div>
-      </li>
-
-      <li class="timeline-entry">
-        <span class="timeline-year">2025</span>
-        <span class="timeline-rule" aria-hidden="true"></span>
-        <div class="timeline-content">
-          <p class="timeline-date">05 Apr 2025</p>
-          <span class="tag">Conference</span>
-          <p class="timeline-title">PPLW Exchange Day &mdash; Multidisciplinary 2.0 Care &amp; Digital Health Literacy</p>
-          <p class="timeline-venue">Belgium</p>
-          <p class="timeline-desc">Participation in the PPLW Exchange Day on multidisciplinary 2.0 care and digital health literacy.</p>
-        </div>
-      </li>
-
-      <li class="timeline-entry">
-        <span class="timeline-year">2025</span>
-        <span class="timeline-rule" aria-hidden="true"></span>
-        <div class="timeline-content">
-          <p class="timeline-date">17 Mar 2025</p>
-          <span class="tag">Workshop</span>
-          <p class="timeline-title">Ethics Committee Working Group &mdash; French Delegation on Digital Health</p>
-          <p class="timeline-venue">France</p>
-          <p class="timeline-desc">Speaker at the workshop of the ethics committee working group of the French delegation on digital health.</p>
-        </div>
-      </li>
-
-      <li class="timeline-entry">
-        <span class="timeline-year">2025</span>
-        <span class="timeline-rule" aria-hidden="true"></span>
-        <div class="timeline-content">
-          <p class="timeline-date">28 Feb 2025</p>
-          <span class="tag">Conference</span>
-          <p class="timeline-title">UCLouvain Honorary Doctorates &mdash; Health &amp; Data Science</p>
-          <p class="timeline-venue">UCLouvain, Faculty of Science and Technology</p>
-          <p class="timeline-desc">Participation in the Honorary Doctorates ceremony on the theme of &ldquo;Health and Data Science&rdquo;, including a workshop on secondary use and ownership of health data.</p>
-        </div>
-      </li>
-
-      <li class="timeline-entry">
-        <span class="timeline-year">2025</span>
-        <span class="timeline-rule" aria-hidden="true"></span>
-        <div class="timeline-content">
-          <p class="timeline-date">20 Feb 2025</p>
-          <span class="tag">Workshop</span>
-          <p class="timeline-title">Rare Disease Research &amp; Screening Workshop</p>
-          <p class="timeline-venue">Cliniques Universitaires Saint-Luc, Brussels</p>
-          <p class="timeline-desc">Participation in a workshop on research and screening organized by the rare disease care team at the Cliniques Universitaires Saint-Luc.</p>
-        </div>
-      </li>
-
-      <li class="timeline-entry">
-        <span class="timeline-year">2025</span>
-        <span class="timeline-rule" aria-hidden="true"></span>
-        <div class="timeline-content">
-          <p class="timeline-date">13 Feb 2025</p>
-          <span class="tag">Conference</span>
-          <p class="timeline-title">Soins &amp; Sant&eacute; Fair &mdash; AI in Healthcare</p>
-          <p class="timeline-venue">Namur, Belgium</p>
-          <p class="timeline-desc">Speaker at the Namur health fair Soins &amp; Sant&eacute;, on the topic of AI use in healthcare.</p>
-        </div>
-      </li>
-
-      <li class="timeline-entry">
-        <span class="timeline-year">2025</span>
-        <span class="timeline-rule" aria-hidden="true"></span>
-        <div class="timeline-content">
-          <p class="timeline-date">30 Jan 2025</p>
-          <span class="tag">Workshop</span>
-          <p class="timeline-title">Rare Diseases Reflection Session (2/2)</p>
-          <p class="timeline-venue">Belgium</p>
-          <p class="timeline-desc">Second morning reflection session dedicated to rare diseases: diagnosis, treatment, clinical studies, and related challenges.</p>
-        </div>
-      </li>
-
-      <li class="timeline-entry">
-        <span class="timeline-year">2024</span>
-        <span class="timeline-rule" aria-hidden="true"></span>
-        <div class="timeline-content">
-          <p class="timeline-date">09 Dec 2024</p>
-          <span class="tag">Workshop</span>
-          <p class="timeline-title">Rare Diseases Reflection Session (1/2)</p>
-          <p class="timeline-venue">Belgium</p>
-          <p class="timeline-desc">First morning reflection session dedicated to rare diseases: diagnosis, treatment, clinical studies, and related challenges.</p>
-        </div>
-      </li>
-
-      <li class="timeline-entry">
-        <span class="timeline-year">2024</span>
-        <span class="timeline-rule" aria-hidden="true"></span>
-        <div class="timeline-content">
-          <p class="timeline-date">09 Sep 2024</p>
-          <span class="tag">Conference</span>
-          <p class="timeline-title">Grascomp Doctoral Day</p>
-          <p class="timeline-venue">Louvain-la-Neuve</p>
-          <p class="timeline-desc">Participation in the Grascomp Doctoral Day.</p>
-        </div>
-      </li>
-
-      <li class="timeline-entry">
-        <span class="timeline-year">2024</span>
-        <span class="timeline-rule" aria-hidden="true"></span>
-        <div class="timeline-content">
-          <p class="timeline-date">01 Mar 2024</p>
-          <span class="tag">Milestone</span>
-          <p class="timeline-title">INAH Working Group &mdash; Institute of Analytics for Health</p>
-          <p class="timeline-venue">Wallonia, Belgium</p>
-          <p class="timeline-desc">Participation in the working group for the creation of the Walloon non-profit organization INAH (Institute of Analytics for Health).</p>
-        </div>
-      </li>
-
-      <li class="timeline-entry">
-        <span class="timeline-year">2024</span>
-        <span class="timeline-rule" aria-hidden="true"></span>
-        <div class="timeline-content">
-          <p class="timeline-date">05 Feb 2024</p>
-          <span class="tag">Conference</span>
-          <p class="timeline-title">Research to Reality: Digital Solutions to European Challenges</p>
-          <p class="timeline-venue">European Commission (HaDEA)</p>
-          <p class="timeline-desc">Speaker at the European event &ldquo;Research to Reality: Digital Solutions to European Challenges&rdquo;.</p>
-          <a href="https://hadea.ec.europa.eu/events/research-reality-digital-solutions-european-challenges-2024-02-05_en" class="timeline-link" target="_blank" rel="noopener noreferrer">&rarr; Event page</a>
-        </div>
-      </li>
-
-      <li class="timeline-entry">
-        <span class="timeline-year">2024</span>
-        <span class="timeline-rule" aria-hidden="true"></span>
-        <div class="timeline-content">
-          <p class="timeline-date">2024</p>
-          <span class="tag">Milestone</span>
-          <p class="timeline-title">Clinom-X Funding Logos Displayed at A6K</p>
-          <p class="timeline-venue">A6K, Charleroi</p>
-          <p class="timeline-desc">Information about the funding of the Clinom-X project, along with the associated logos (Wallonia, Europe), has been displayed on the windows of the offices occupied by researchers in Charleroi at the A6K building.</p>
-        </div>
-      </li>
-
-    </ul>
-  </div>
-</section>
-
-</main>
-
-<!-- ===== FOOTER ===== -->
-<footer class="site-footer">
-  <div class="footer-inner">
-    <p class="footer-copy">&copy; 2025 Clinom-X Research Consortium</p>
-    <nav class="footer-nav" aria-label="Footer navigation">
-      <a href="index.html">Home</a>
-      <a href="events.html">Events</a>
-      <a href="people.html">People</a>
-      <a href="links.html">Links</a>
-    </nav>
-  </div>
-</footer>
+  </footer>
 
 </body>
+
 </html>
