@@ -1002,30 +1002,45 @@ hr {
    5.2 Events page
    --------------------------------------------------------- */
 
-.filter-bar {
+/* Filter container: radios + labels + timeline as siblings */
+.filter-container {
   display: flex;
-  gap: 0;
-  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
   border-bottom: 1px solid var(--clr-border);
+  margin-bottom: 0;
 }
 
-.filter-bar a {
+.filter-label {
   font-family: 'IBM Plex Mono', monospace;
   font-size: var(--fs-sm);
   color: var(--clr-text-muted);
   padding: 0.75rem 1.25rem;
-  text-decoration: none;
   border-bottom: 2px solid transparent;
   transition: all 0.2s ease;
+  cursor: pointer;
 }
 
-.filter-bar a:hover {
+.filter-label:hover {
   color: var(--clr-text-bright);
 }
 
-.filter-bar a.active {
+.filter-radio:checked + .filter-label {
   color: var(--clr-text-bright);
   border-bottom-color: var(--clr-accent);
+}
+
+/* Timeline takes full width below the filter labels */
+.filter-container .timeline {
+  flex-basis: 100%;
+  margin-top: 2.5rem;
+}
+
+/* Filtering logic */
+#filter-conference:checked ~ .timeline .timeline-entry:not(.type-conference),
+#filter-workshop:checked ~ .timeline .timeline-entry:not(.type-workshop),
+#filter-publication:checked ~ .timeline .timeline-entry:not(.type-publication),
+#filter-milestone:checked ~ .timeline .timeline-entry:not(.type-milestone) {
+  display: none;
 }
 
 /* ---------------------------------------------------------
