@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Clinom-X — Project events, conferences, publications, and milestones.">
+  <title>Clinom-X | Events</title>
+  <link rel="icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo" aria-label="Clinom-X home">
+      <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true">
+        <polygon points="20,2 36.5,11 36.5,29 20,38 3.5,29 3.5,11" fill="none" stroke="#3b82f6" stroke-width="2"/>
+        <polygon points="20,8 31,14 31,26 20,32 9,26 9,14" fill="none" stroke="#3b82f6" stroke-width="1" opacity="0.5"/>
+        <circle cx="20" cy="20" r="3" fill="#3b82f6"/>
+      </svg>
+      <span class="logo-text">CLINOM-X</span>
+    </a>
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle sr-only" aria-label="Toggle navigation">
+    <label for="nav-toggle" class="nav-toggle-label" aria-label="Open menu"><span></span></label>
+
+    <div class="nav-menu">
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="events.html" class="active">Events</a>
+        <a href="people.html">People</a>
+        <a href="links.html">Links</a>
+      </nav>
+      <a href="mailto:contact@clinom-x.eu" class="btn-contact">Contact</a>
+    </div>
+  </div>
+</header>
+
+<main id="main" class="page-content">
+
+<!-- ===== PAGE HERO ===== -->
+<section class="page-hero">
+  <div class="hero-bg" aria-hidden="true">
+    <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <pattern id="dot-grid" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+          <circle cx="12" cy="12" r="1" fill="rgba(59,130,246,0.08)"/>
+        </pattern>
+      </defs>
+      <rect width="100%" height="100%" fill="url(#dot-grid)"/>
+    </svg>
+  </div>
+  <div class="container">
+    <p class="eyebrow">Timeline</p>
+    <h1>Events</h1>
+    <p class="subtitle">Conferences, publications, and project milestones from the Clinom-X consortium.</p>
+  </div>
+</section>
+
+<!-- ===== FILTER BAR ===== -->
+<section class="section" style="padding-top: 2rem;">
+  <div class="container">
+    <nav class="filter-bar" aria-label="Event type filter">
+      <a href="#" class="active">All</a>
+      <a href="#">Conferences</a>
+      <a href="#">Publications</a>
+      <a href="#">Milestones</a>
+    </nav>
+
+    <!-- ===== EVENTS TIMELINE ===== -->
+    <ul class="timeline">
+
+      <!-- Event 1 -->
+      <li class="timeline-entry">
+        <span class="timeline-year">2026</span>
+        <span class="timeline-rule" aria-hidden="true"></span>
+        <div class="timeline-content">
+          <p class="timeline-date">14 Oct 2026</p>
+          <span class="tag">Conference</span>
+          <p class="timeline-title">ECAI 2026 &mdash; Workshop on Clinical AI</p>
+          <p class="timeline-venue">The Hague, Netherlands</p>
+          <p class="timeline-desc">Organising a half-day workshop on trustworthy AI for rare disease diagnosis, featuring invited speakers from the consortium and external collaborators.</p>
+          <a href="#" class="timeline-link">&rarr; Workshop programme</a>
+        </div>
+      </li>
+
+      <!-- Event 2 -->
+      <li class="timeline-entry">
+        <span class="timeline-year">2026</span>
+        <span class="timeline-rule" aria-hidden="true"></span>
+        <div class="timeline-content">
+          <p class="timeline-date">01 Jul 2026</p>
+          <span class="tag">Milestone</span>
+          <p class="timeline-title">Pilot Site Deployment &mdash; Phase 1</p>
+          <p class="timeline-venue">UMC Utrecht, Charité Berlin, Hôpital Necker Paris</p>
+          <p class="timeline-desc">First deployment of the Clinom-X prototype in three European pilot hospitals, beginning a six-month prospective evaluation period.</p>
+        </div>
+      </li>
+
+      <!-- Event 3 -->
+      <li class="timeline-entry">
+        <span class="timeline-year">2025</span>
+        <span class="timeline-rule" aria-hidden="true"></span>
+        <div class="timeline-content">
+          <p class="timeline-date">23 Jun 2025</p>
+          <span class="tag">Conference</span>
+          <p class="timeline-title">AIME 2025 &mdash; Oral Presentation</p>
+          <p class="timeline-venue">Pavia, Italy</p>
+          <p class="timeline-desc">Presenting our latest results on graph-based differential diagnosis in the Artificial Intelligence in Medicine Europe main conference track.</p>
+          <a href="#" class="timeline-link">&rarr; Abstract</a>
+        </div>
+      </li>
+
+      <!-- Event 4 -->
+      <li class="timeline-entry">
+        <span class="timeline-year">2025</span>
+        <span class="timeline-rule" aria-hidden="true"></span>
+        <div class="timeline-content">
+          <p class="timeline-date">15 May 2025</p>
+          <span class="tag">Publication</span>
+          <p class="timeline-title">JAMIA Paper &mdash; Probabilistic Phenotype Matching</p>
+          <p class="timeline-venue">Journal of the American Medical Informatics Association</p>
+          <p class="timeline-desc">Peer-reviewed manuscript accepted, presenting a novel probabilistic framework for matching patient phenotypes to rare disease profiles using HPO-grounded embeddings.</p>
+          <a href="#" class="timeline-link">&rarr; Preprint</a>
+        </div>
+      </li>
+
+      <!-- Event 5 -->
+      <li class="timeline-entry">
+        <span class="timeline-year">2025</span>
+        <span class="timeline-rule" aria-hidden="true"></span>
+        <div class="timeline-content">
+          <p class="timeline-date">01 Apr 2025</p>
+          <span class="tag">Milestone</span>
+          <p class="timeline-title">Knowledge Graph v2.0 Release</p>
+          <p class="timeline-venue">Open-source release on GitHub</p>
+          <p class="timeline-desc">Second major release of the Clinom-X knowledge graph, covering 8 400 rare diseases with probabilistic edge weights and full HPO/Orphanet alignment.</p>
+          <a href="#" class="timeline-link">&rarr; GitHub repository</a>
+        </div>
+      </li>
+
+      <!-- Event 6 -->
+      <li class="timeline-entry">
+        <span class="timeline-year">2024</span>
+        <span class="timeline-rule" aria-hidden="true"></span>
+        <div class="timeline-content">
+          <p class="timeline-date">09 Nov 2024</p>
+          <span class="tag">Conference</span>
+          <p class="timeline-title">MedInfo 2024 &mdash; Poster Presentation</p>
+          <p class="timeline-venue">Sydney, Australia</p>
+          <p class="timeline-desc">Poster presenting the Clinom-X architecture and preliminary benchmark results at the World Congress on Medical and Health Informatics.</p>
+          <a href="#" class="timeline-link">&rarr; Poster PDF</a>
+        </div>
+      </li>
+
+      <!-- Event 7 -->
+      <li class="timeline-entry">
+        <span class="timeline-year">2024</span>
+        <span class="timeline-rule" aria-hidden="true"></span>
+        <div class="timeline-content">
+          <p class="timeline-date">18 Jun 2024</p>
+          <span class="tag">Publication</span>
+          <p class="timeline-title">Nature Digital Medicine &mdash; Position Paper</p>
+          <p class="timeline-venue">npj Digital Medicine</p>
+          <p class="timeline-desc">Consortium position paper outlining the case for probabilistic knowledge graphs in rare disease diagnostics and the Clinom-X research agenda.</p>
+          <a href="#" class="timeline-link">&rarr; Full text</a>
+        </div>
+      </li>
+
+      <!-- Event 8 -->
+      <li class="timeline-entry">
+        <span class="timeline-year">2024</span>
+        <span class="timeline-rule" aria-hidden="true"></span>
+        <div class="timeline-content">
+          <p class="timeline-date">15 Jan 2024</p>
+          <span class="tag">Milestone</span>
+          <p class="timeline-title">Consortium Kickoff Meeting</p>
+          <p class="timeline-venue">Utrecht, Netherlands</p>
+          <p class="timeline-desc">Official launch of the Clinom-X consortium, bringing together all six partner institutions for a two-day kickoff including workpackage planning and governance setup.</p>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p class="footer-copy">&copy; 2025 Clinom-X Research Consortium</p>
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <a href="index.html">Home</a>
+      <a href="events.html">Events</a>
+      <a href="people.html">People</a>
+      <a href="links.html">Links</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
