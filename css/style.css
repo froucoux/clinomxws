@@ -663,6 +663,15 @@ h3 { font-size: var(--fs-lg); font-weight: 600; margin-bottom: 1rem; }
   box-shadow: 0 0 0 1px var(--clr-accent);
 }
 
+.person-photo {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 2px solid var(--clr-border);
+}
+
 .person-avatar {
   width: 64px;
   height: 64px;

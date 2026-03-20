@@ -1,259 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Clinom-X — Meet the researchers, engineers, and clinical partners behind the consortium.">
+  <meta name="description"
+    content="Clinom-X — Meet the researchers, engineers, and clinical partners behind the consortium.">
   <title>Clinom-X | People</title>
   <link rel="icon" href="favicon.ico">
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-<a class="skip-link" href="#main">Skip to content</a>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-<!-- ===== HEADER ===== -->
-<header class="site-header">
-  <div class="header-inner">
-    <a href="index.html" class="logo" aria-label="Clinom-X home">
-      <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true">
-        <polygon points="20,2 36.5,11 36.5,29 20,38 3.5,29 3.5,11" fill="none" stroke="#3b82f6" stroke-width="2"/>
-        <polygon points="20,8 31,14 31,26 20,32 9,26 9,14" fill="none" stroke="#3b82f6" stroke-width="1" opacity="0.5"/>
-        <circle cx="20" cy="20" r="3" fill="#3b82f6"/>
-      </svg>
-      <span class="logo-text">CLINOM-X</span>
-    </a>
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="Clinom-X home">
+        <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true">
+          <polygon points="20,2 36.5,11 36.5,29 20,38 3.5,29 3.5,11" fill="none" stroke="#3b82f6" stroke-width="2" />
+          <polygon points="20,8 31,14 31,26 20,32 9,26 9,14" fill="none" stroke="#3b82f6" stroke-width="1"
+            opacity="0.5" />
+          <circle cx="20" cy="20" r="3" fill="#3b82f6" />
+        </svg>
+        <span class="logo-text">CLINOM-X</span>
+      </a>
 
-    <input type="checkbox" id="nav-toggle" class="nav-toggle sr-only" aria-label="Toggle navigation">
-    <label for="nav-toggle" class="nav-toggle-label" aria-label="Open menu"><span></span></label>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle sr-only" aria-label="Toggle navigation">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Open menu"><span></span></label>
 
-    <div class="nav-menu">
-      <nav class="nav-links" aria-label="Primary navigation">
+      <div class="nav-menu">
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a href="events.html">Events</a>
+          <a href="people.html" class="active">People</a>
+          <a href="links.html">Links</a>
+        </nav>
+        <a href="mailto:francois.roucoux@uclouvain.be" class="btn-contact btn-contact-nav">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <a href="mailto:francois.roucoux@uclouvain.be" class="btn-contact btn-contact-fixed">Contact</a>
+
+  <main id="main" class="page-content">
+
+    <!-- ===== PAGE HERO ===== -->
+    <section class="page-hero">
+      <div class="hero-bg" aria-hidden="true">
+        <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <pattern id="dot-grid" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+              <circle cx="12" cy="12" r="1" fill="rgba(37,99,235,0.07)" />
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#dot-grid)" />
+        </svg>
+      </div>
+      <div class="container">
+        <p class="eyebrow">Team</p>
+        <h1>People</h1>
+        <p class="subtitle">The people behind the Clinom-X project.</p>
+      </div>
+    </section>
+
+    <!-- ===== PROJECT PROMOTOR ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="group-section">
+          <p class="group-label">Project Promotor &amp; Advisor</p>
+          <h2>Project Lead</h2>
+          <div class="person-grid">
+
+            <article class="person-card">
+              <img src="img/peoples/jodogne.jpg" alt="Prof. Sébastien Jodogne" class="person-photo">
+              <p class="person-name">Prof. Sébastien Jodogne</p>
+              <p class="person-role">Project Promotor &amp; Advisor</p>
+              <p class="person-affiliation">UCLouvain &mdash; ICTEAM</p>
+              <p class="person-bio">Professor of computer science applied to life sciences at UCLouvain (ICTEAM / EPL).
+                His research focuses on health informatics, medical imaging, deep learning, federated learning, and
+                computer vision. He is the author of Orthanc, an open-source ecosystem for medical imaging (DICOM).</p>
+              <div class="person-links">
+                <a href="mailto:sebastien.jodogne@uclouvain.be" aria-label="Email Sébastien Jodogne">&#9993;</a>
+                <a href="https://perso.uclouvain.be/sebastien.jodogne/" target="_blank" rel="noopener noreferrer"
+                  aria-label="Personal page (opens in new tab)">&#8599;<span class="sr-only"> (opens in new
+                    tab)</span></a>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <hr>
+
+        <!-- ===== RESEARCHERS & ENGINEERS ===== -->
+        <div class="group-section">
+          <p class="group-label">Researchers &amp; Engineers</p>
+          <h2>Core Team</h2>
+          <div class="person-grid">
+
+            <article class="person-card">
+              <img src="img/peoples/roucoux.jpg" alt="François Roucoux" class="person-photo">
+              <p class="person-name">Fran&ccedil;ois Roucoux</p>
+              <p class="person-role">Main Project Investigator &amp; Doctoral Researcher</p>
+              <p class="person-affiliation">UCLouvain &mdash; ICTEAM</p>
+              <p class="person-bio">Medical doctor and computer scientist, currently pursuing a PhD thesis at ICTEAM
+                (UCLouvain) in the field of rare diseases screening and diagnosis. Head of Medical Information
+                Technology at CHU de Charleroi, with expertise in health informatics, clinical decision support, and
+                medical AI.</p>
+              <div class="person-links">
+                <a href="mailto:francois.roucoux@uclouvain.be" aria-label="Email François Roucoux">&#9993;</a>
+                <a href="https://www.researchgate.net/profile/Francois-Roucoux" target="_blank"
+                  rel="noopener noreferrer" aria-label="ResearchGate profile (opens in new tab)">&#8599;<span
+                    class="sr-only"> (opens in new tab)</span></a>
+              </div>
+            </article>
+
+            <article class="person-card">
+              <img src="img/peoples/molka.jpg" alt="Molka Anaghim Ftouhi" class="person-photo"
+                style="object-position: center 20%;">
+              <p class="person-name">Molka Anaghim Ftouhi</p>
+              <p class="person-role">Software Engineer</p>
+              <p class="person-affiliation">UCLouvain &mdash; ICTEAM</p>
+              <p class="person-bio">Software engineer and bioinformatics developer at UCLouvain. She holds an
+                engineering degree from ENET'Com (Sfax, Tunisia) She develops the web applications and data management
+                tools of the Clinom-X platform.</p>
+              <div class="person-links">
+                <a href="mailto:molka.ftouhi@uclouvain.be" aria-label="Email Molka Anaghim Ftouhi">&#9993;</a>
+                <a href="https://github.com/molkaanaghimftouhi" target="_blank" rel="noopener noreferrer"
+                  aria-label="GitHub profile (opens in new tab)">&#8599;<span class="sr-only"> (opens in new
+                    tab)</span></a>
+              </div>
+            </article>
+
+            <article class="person-card">
+              <img src="img/peoples/schmitz.jpg" alt="Donatien Schmitz" class="person-photo">
+              <p class="person-name">Donatien Schmitz</p>
+              <p class="person-role">Postdoctoral Researcher</p>
+              <p class="person-affiliation">UCLouvain &mdash; ICTEAM</p>
+              <p class="person-bio">Postdoctoral researcher in the Cloud and Large Scale computing group at UCLouvain
+                (ICTEAM). His research focuses on distributed systems, stream processing, and capacity planning. He
+                holds an MSc and PhD in computer science from UCLouvain, with published work on hybrid batch-stream
+                workloads and elastic scaling for distributed stream processing.</p>
+              <div class="person-links">
+                <a href="mailto:donatien.schmitz@uclouvain.be" aria-label="Email Donatien Schmitz">&#9993;</a>
+                <a href="https://github.com/Donaschmi" target="_blank" rel="noopener noreferrer"
+                  aria-label="GitHub profile (opens in new tab)">&#8599;<span class="sr-only"> (opens in new
+                    tab)</span></a>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-copy">&copy; 2025 Clinom-X Research Consortium</p>
+      <nav class="footer-nav" aria-label="Footer navigation">
         <a href="index.html">Home</a>
         <a href="events.html">Events</a>
-        <a href="people.html" class="active">People</a>
+        <a href="people.html">People</a>
         <a href="links.html">Links</a>
       </nav>
-      <a href="mailto:francois.roucoux@uclouvain.be" class="btn-contact btn-contact-nav">Contact</a>
     </div>
-  </div>
-</header>
-
-<a href="mailto:francois.roucoux@uclouvain.be" class="btn-contact btn-contact-fixed">Contact</a>
-
-<main id="main" class="page-content">
-
-<!-- ===== PAGE HERO ===== -->
-<section class="page-hero">
-  <div class="hero-bg" aria-hidden="true">
-    <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <pattern id="dot-grid" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <circle cx="12" cy="12" r="1" fill="rgba(37,99,235,0.07)"/>
-        </pattern>
-      </defs>
-      <rect width="100%" height="100%" fill="url(#dot-grid)"/>
-    </svg>
-  </div>
-  <div class="container">
-    <p class="eyebrow">Consortium</p>
-    <h1>People</h1>
-    <p class="subtitle">The researchers, engineers, clinicians, and advisors driving the Clinom-X project.</p>
-  </div>
-</section>
-
-<!-- ===== PRINCIPAL INVESTIGATORS ===== -->
-<section class="section">
-  <div class="container">
-    <div class="group-section">
-      <p class="group-label">Principal Investigators</p>
-      <h2>Project Leads</h2>
-      <div class="person-grid">
-
-        <article class="person-card">
-          <div class="person-avatar" aria-hidden="true">EV</div>
-          <p class="person-name">Prof. Elena Vandermeer</p>
-          <p class="person-role">Principal Investigator &amp; Coordinator</p>
-          <p class="person-affiliation">UMC Utrecht</p>
-          <p class="person-bio">Medical informatician specialising in knowledge representation for rare diseases. Leads the consortium and oversees the probabilistic knowledge graph workpackage.</p>
-          <div class="person-links">
-            <a href="mailto:e.vandermeer@umcutrecht.nl" aria-label="Email Elena Vandermeer">&#9993;</a>
-            <a href="#" aria-label="ORCID profile">i</a>
-            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Personal page (opens in new tab)">&#8599;<span class="sr-only"> (opens in new tab)</span></a>
-          </div>
-        </article>
-
-        <article class="person-card">
-          <div class="person-avatar" aria-hidden="true">MS</div>
-          <p class="person-name">Prof. Markus Steinbach</p>
-          <p class="person-role">Co-PI, Machine Learning</p>
-          <p class="person-affiliation">ETH Zürich</p>
-          <p class="person-bio">Graph neural network researcher with a focus on explainability. Leads the inference engine workpackage and supervises the GNN model development.</p>
-          <div class="person-links">
-            <a href="mailto:steinbach@ethz.ch" aria-label="Email Markus Steinbach">&#9993;</a>
-            <a href="#" aria-label="ORCID profile">i</a>
-            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Personal page (opens in new tab)">&#8599;<span class="sr-only"> (opens in new tab)</span></a>
-          </div>
-        </article>
-
-        <article class="person-card">
-          <div class="person-avatar" aria-hidden="true">CB</div>
-          <p class="person-name">Prof. Claire Beaumont</p>
-          <p class="person-role">Co-PI, Clinical Evaluation</p>
-          <p class="person-affiliation">INSERM Paris</p>
-          <p class="person-bio">Clinical geneticist and health-services researcher. Designs and coordinates the prospective pilot-site evaluations across three European hospitals.</p>
-          <div class="person-links">
-            <a href="mailto:c.beaumont@inserm.fr" aria-label="Email Claire Beaumont">&#9993;</a>
-            <a href="#" aria-label="ORCID profile">i</a>
-            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Personal page (opens in new tab)">&#8599;<span class="sr-only"> (opens in new tab)</span></a>
-          </div>
-        </article>
-
-      </div>
-    </div>
-
-    <hr>
-
-    <!-- ===== RESEARCHERS & ENGINEERS ===== -->
-    <div class="group-section">
-      <p class="group-label">Researchers &amp; Engineers</p>
-      <h2>Core Team</h2>
-      <div class="person-grid">
-
-        <article class="person-card">
-          <div class="person-avatar" aria-hidden="true">LK</div>
-          <p class="person-name">Dr. Lena Kowalski</p>
-          <p class="person-role">Postdoctoral Researcher</p>
-          <p class="person-affiliation">Charité Berlin</p>
-          <p class="person-bio">Develops the probabilistic reasoning layer, integrating Bayesian networks with ontology-grounded knowledge representations.</p>
-          <div class="person-links">
-            <a href="mailto:l.kowalski@charite.de" aria-label="Email Lena Kowalski">&#9993;</a>
-            <a href="#" aria-label="ORCID profile">i</a>
-            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Personal page (opens in new tab)">&#8599;<span class="sr-only"> (opens in new tab)</span></a>
-          </div>
-        </article>
-
-        <article class="person-card">
-          <div class="person-avatar" aria-hidden="true">TN</div>
-          <p class="person-name">Tomas Nilsson</p>
-          <p class="person-role">Research Software Engineer</p>
-          <p class="person-affiliation">Karolinska Institutet</p>
-          <p class="person-bio">Builds and maintains the open-source graph database infrastructure and ETL pipelines that power the knowledge graph.</p>
-          <div class="person-links">
-            <a href="mailto:tomas.nilsson@ki.se" aria-label="Email Tomas Nilsson">&#9993;</a>
-            <a href="#" aria-label="ORCID profile">i</a>
-            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Personal page (opens in new tab)">&#8599;<span class="sr-only"> (opens in new tab)</span></a>
-          </div>
-        </article>
-
-        <article class="person-card">
-          <div class="person-avatar" aria-hidden="true">AD</div>
-          <p class="person-name">Dr. Amira Deschamps</p>
-          <p class="person-role">Postdoctoral Researcher</p>
-          <p class="person-affiliation">KU Leuven</p>
-          <p class="person-bio">Focuses on explainable AI techniques, developing human-readable reasoning traces and evaluation metrics for clinician trust studies.</p>
-          <div class="person-links">
-            <a href="mailto:amira.deschamps@kuleuven.be" aria-label="Email Amira Deschamps">&#9993;</a>
-            <a href="#" aria-label="ORCID profile">i</a>
-            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Personal page (opens in new tab)">&#8599;<span class="sr-only"> (opens in new tab)</span></a>
-          </div>
-        </article>
-
-        <article class="person-card">
-          <div class="person-avatar" aria-hidden="true">JR</div>
-          <p class="person-name">Jonas Richter</p>
-          <p class="person-role">Doctoral Researcher</p>
-          <p class="person-affiliation">ETH Zürich</p>
-          <p class="person-bio">PhD student working on graph neural network architectures for heterogeneous biomedical knowledge graphs under Prof. Steinbach.</p>
-          <div class="person-links">
-            <a href="mailto:j.richter@ethz.ch" aria-label="Email Jonas Richter">&#9993;</a>
-            <a href="#" aria-label="ORCID profile">i</a>
-            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Personal page (opens in new tab)">&#8599;<span class="sr-only"> (opens in new tab)</span></a>
-          </div>
-        </article>
-
-      </div>
-    </div>
-
-    <hr>
-
-    <!-- ===== CLINICAL PARTNERS ===== -->
-    <div class="group-section">
-      <p class="group-label">Clinical Partners</p>
-      <h2>Hospital Liaisons</h2>
-      <div class="person-grid">
-
-        <article class="person-card">
-          <div class="person-avatar" aria-hidden="true">SH</div>
-          <p class="person-name">Dr. Sophie Hendriks</p>
-          <p class="person-role">Clinical Informatician</p>
-          <p class="person-affiliation">UMC Utrecht</p>
-          <p class="person-bio">Leads EHR integration at the Utrecht pilot site, ensuring the prototype meets clinical workflow requirements and data governance standards.</p>
-          <div class="person-links">
-            <a href="mailto:s.hendriks@umcutrecht.nl" aria-label="Email Sophie Hendriks">&#9993;</a>
-            <a href="#" aria-label="ORCID profile">i</a>
-            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Personal page (opens in new tab)">&#8599;<span class="sr-only"> (opens in new tab)</span></a>
-          </div>
-        </article>
-
-        <article class="person-card">
-          <div class="person-avatar" aria-hidden="true">PL</div>
-          <p class="person-name">Dr. Philippe Laurent</p>
-          <p class="person-role">Paediatrician &amp; Rare Disease Specialist</p>
-          <p class="person-affiliation">Hôpital Necker, Paris</p>
-          <p class="person-bio">Provides clinical domain expertise on rare metabolic disorders and coordinates patient cohort selection for the Paris pilot evaluation.</p>
-          <div class="person-links">
-            <a href="mailto:p.laurent@aphp.fr" aria-label="Email Philippe Laurent">&#9993;</a>
-            <a href="#" aria-label="ORCID profile">i</a>
-            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Personal page (opens in new tab)">&#8599;<span class="sr-only"> (opens in new tab)</span></a>
-          </div>
-        </article>
-
-      </div>
-    </div>
-
-    <hr>
-
-    <!-- ===== ADVISORY BOARD ===== -->
-    <div class="group-section">
-      <p class="group-label">Advisory Board</p>
-      <h2>External Advisors</h2>
-      <div class="person-grid">
-
-        <article class="person-card">
-          <div class="person-avatar" aria-hidden="true">AO</div>
-          <p class="person-name">Prof. Ana Oliveira</p>
-          <p class="person-role">Scientific Advisor</p>
-          <p class="person-affiliation">University of Porto</p>
-          <p class="person-bio">Expert in biomedical ontologies and semantic web technologies. Advises on knowledge graph quality, interoperability, and alignment with international standards.</p>
-          <div class="person-links">
-            <a href="mailto:aoliveira@up.pt" aria-label="Email Ana Oliveira">&#9993;</a>
-            <a href="#" aria-label="ORCID profile">i</a>
-            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Personal page (opens in new tab)">&#8599;<span class="sr-only"> (opens in new tab)</span></a>
-          </div>
-        </article>
-
-      </div>
-    </div>
-
-  </div>
-</section>
-
-</main>
-
-<!-- ===== FOOTER ===== -->
-<footer class="site-footer">
-  <div class="footer-inner">
-    <p class="footer-copy">&copy; 2025 Clinom-X Research Consortium</p>
-    <nav class="footer-nav" aria-label="Footer navigation">
-      <a href="index.html">Home</a>
-      <a href="events.html">Events</a>
-      <a href="people.html">People</a>
-      <a href="links.html">Links</a>
-    </nav>
-  </div>
-</footer>
+  </footer>
 
 </body>
+
 </html>
