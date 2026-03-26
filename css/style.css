@@ -235,20 +235,13 @@ h3 { font-size: var(--fs-lg); font-weight: 600; margin-bottom: 1rem; }
 }
 
 .btn-contact-fixed {
-  position: fixed;
-  top: 4.75rem;
-  z-index: 99;
-  right: calc(50% - 550px + clamp(1rem, 5vw, 3rem));
-}
-
-.btn-contact-nav {
   display: none;
 }
 
-@media (max-width: 1100px) {
-  .btn-contact-fixed {
-    right: clamp(1rem, 5vw, 3rem);
-  }
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 }
 
 /* Hamburger toggle (CSS-only) */
