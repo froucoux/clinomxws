@@ -910,12 +910,10 @@ hr {
 .events-preview {
   display: flex;
   gap: 1.5rem;
-  overflow-x: auto;
-  padding-bottom: 1rem;
 }
 
 .event-preview-card {
-  flex: 0 0 320px;
+  flex: 1 1 0;
   background: var(--clr-surface);
   border: 1px solid var(--clr-border);
   border-radius: 6px;
