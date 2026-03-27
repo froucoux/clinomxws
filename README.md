@@ -1,6 +1,6 @@
-# Clinom-X — Static Website
+# CLINOM-X — Static Website
 
-**Site name:** Clinom-X
+**Site name:** CLINOM-X
 **Nature:** Academic / medical research project presentation site
 **Institution:** UCLouvain — ICTEAM Institute (Belgium)
 **Technology:** Pure HTML5 + CSS3, no JavaScript frameworks, no build tools
@@ -10,7 +10,7 @@
 
 ## Project Description
 
-Clinom-X is a research project developing a decentralized IT infrastructure for secure management of clinomic data for biomedical research. By clinomic data we mean the multimodal combination of clinical, biological, behavioural, neurophysiological, anatomopathological, multi-omic (genomic, transcriptomic, proteomic, metabolomic), and imaging data.
+CLINOM-X is a research project developing a decentralized IT infrastructure for secure management of clinomic data for biomedical research. By clinomic data we mean the multimodal combination of clinical, biological, behavioural, neurophysiological, anatomopathological, multi-omic (genomic, transcriptomic, proteomic, metabolomic), and imaging data.
 
 The project is developed at UCLouvain (Belgium), in the ICTEAM research institute, and is part of the WAL-IMAGIN portfolio (MedReSyst). Financial support is provided by WalEurope (ERDF + Wallonia) and En Mieux.
 
@@ -46,7 +46,7 @@ claudomix/
 ### Homepage — `index.html`
 
 - **Hero** — Project name, tagline, abstract, CTA buttons, and Key Facts card (side-by-side on desktop)
-- **About** — Context on growing biomedical data, the hospital access challenge, and Clinom-X's role
+- **About** — Context on growing biomedical data, the hospital access challenge, and CLINOM-X's role
 - **Objectives** — 4 cards: decentralized infrastructure, secure external access, hospital dashboard, AI/analysis foundation
 - **Recent Events** — 3 preview cards linking to the events page
 - **Partners & Funding** — UCLouvain logo (linked to ICTEAM) and funding partners logos (En Mieux, EU/ERDF, Wallonie, FWB)
