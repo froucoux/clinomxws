@@ -10,7 +10,7 @@
 
 ## Project Description
 
-CLINOM-X is a research project developing a decentralized IT infrastructure for secure management of clinomic data for biomedical research. By clinomic data we mean the multimodal combination of clinical, biological, behavioural, neurophysiological, anatomopathological, multi-omic (genomic, transcriptomic, proteomic, metabolomic), and imaging data.
+CLINOM-X is a research project developing a decentralized IT infrastructure for the secure management of clinomic data for biomedical research. By clinomic data we mean the multimodal combination of clinical, biological, behavioural, neurophysiological, anatomopathological, multi-omic (genomic, transcriptomic, proteomic, metabolomic), and imaging data.
 
 The project is developed at UCLouvain (Belgium), in the ICTEAM research institute, and is part of the MedReSyst portfolio. Financial support is provided by WalEurope (ERDF + Wallonia) and En Mieux.
 
