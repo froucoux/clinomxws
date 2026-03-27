@@ -19,7 +19,7 @@ The project is developed at UCLouvain (Belgium), in the ICTEAM research institut
 ## File & Directory Structure
 
 ```
-claudomix/
+clinomxws/
 ├── index.html                          # Homepage
 ├── events.html                         # Events timeline (with CSS-only filtering)
 ├── people.html                         # Team / contributors
@@ -30,13 +30,16 @@ claudomix/
 │   ├── logo.svg                        # Project logo (SVG hexagon)
 │   ├── hero-bg.svg                     # Hero background dot-grid pattern
 │   ├── logo_UCLouvain_format_jpg_RVB.jpg  # UCLouvain logo
-│   ├── logo_UE+wallonie+FWB.jpg        # Funding partners logos
+│   ├── logo_UE_wallonie.jpg            # EU + Wallonia funding logo
+│   ├── en-mieux.png                    # En Mieux funding logo
+│   ├── europe-wallonie.png             # Europe-Wallonie funding logo
 │   └── peoples/
 │       ├── jodogne.jpg                 # Prof. Sébastien Jodogne
 │       ├── roucoux.jpg                 # François Roucoux
 │       ├── molka.jpg                   # Molka Anaghim Ftouhi
 │       └── schmitz.jpg                 # Donatien Schmitz
-└── favicon.ico                         # 16×16 favicon
+├── favicon.ico                         # 16×16 favicon
+└── README.md                           # This file
 ```
 
 ---
@@ -49,7 +52,7 @@ claudomix/
 - **About** — Context on growing biomedical data, the hospital access challenge, and CLINOM-X's role
 - **Objectives** — 4 cards: decentralized infrastructure, secure external access, hospital dashboard, AI/analysis foundation
 - **Recent Events** — 3 preview cards linking to the events page
-- **Partners & Funding** — UCLouvain logo (linked to ICTEAM) and funding partners logos (En Mieux, EU/ERDF, Wallonie, FWB)
+- **Partners & Funding** — UCLouvain logo (linked to ICTEAM) and funding partners logos (En Mieux, Europe-Wallonie)
 
 ### Events — `events.html`
 
@@ -59,18 +62,17 @@ claudomix/
 
 ### People — `people.html`
 
-- **Project Promotor & Advisor** — Prof. Sébastien Jodogne (with photo)
-- **Researchers & Engineers** — François Roucoux (main investigator), Molka Anaghim Ftouhi (software engineer), Donatien Schmitz (postdoctoral researcher)
+- **Principal Investigator (Academic Lead)** — Prof. Sébastien Jodogne (with photo)
+- **Core Team (Researchers & Engineers)** — François Roucoux (project manager & doctoral researcher), Molka Anaghim Ftouhi (software engineer), Donatien Schmitz (postdoctoral researcher)
 
 ### Links — `links.html`
 
-Curated directory of external resources across 5 categories:
+Curated directory of external resources across 4 categories:
 
 1. **Project Infrastructure** — UCLouvain Forge repository, MedReSyst Med Smart Factory
 2. **Key Publications** — MIE 2026 paper (DIAL repository)
-3. **Tools & Frameworks** — HPO, Orphanet, SNOMED CT
-4. **Partner Institutions** — UCLouvain/ICTEAM, MedReSyst
-5. **Funding** — En Mieux, WalEurope, European Commission
+3. **Partner Institutions** — UCLouvain/ICTEAM, MedReSyst
+4. **Funding** — En Mieux, WalEurope, European Commission
 
 ---
 
